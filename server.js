@@ -6,9 +6,7 @@ const fs = require("fs");
 const app = express();
 app.use(bodyParser.json());
 
-// Test CICD Test CICD
-// Test CICD Test CICD
-// Test CICD
+// Test CICD 1
 
 app.post("/store-file", (req, res) => {
     const { file, data } = req.body;

@@ -6,7 +6,6 @@ const fs = require("fs");
 const app = express();
 app.use(bodyParser.json());
 
-// New /store-file endpoint
 app.post("/store-file", (req, res) => {
     const { file, data } = req.body;
 
@@ -34,7 +33,6 @@ app.post("/store-file", (req, res) => {
     }
 });
 
-// Updated /calculate endpoint
 app.post("/calculate", async (req, res) => {
     const { file, product } = req.body;
 
